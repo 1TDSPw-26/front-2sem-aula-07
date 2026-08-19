@@ -8,11 +8,11 @@ export default function App(){
     <div>
       <Cabecalho/>
     
-    //Crie aqui um componente que represente o conteúdo
+    {/* Crie aqui um componente que represente o conteúdo */}
     
       <Conteudo/>
     
-    //Crie aqui um componente que represente o rodapé
+    {/* Crie aqui um componente que represente o rodapé */}
     
       <Rodape/>
     </div>
