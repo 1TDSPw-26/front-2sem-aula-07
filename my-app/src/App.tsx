@@ -1,4 +1,8 @@
+import { Outlet } from "react-router";
 import Cabecalho from "./components/Cabecalho/Cabecalho";
+import Card from "./components/Card/Card";
+import Conteudo from "./components/Conteudo/Conteudo";
+import Rodape from "./components/Rodape/Rodape";
 
 export default function App(){
 
@@ -8,11 +12,10 @@ export default function App(){
        
        
        {/* Crie aqui um componente que represente o conteúdo */}
-
-
+<Outlet/>
        
        {/* Crie aqui um componente que represente o rodapé */}
-
+        <Rodape/>
 
     </div>
 
