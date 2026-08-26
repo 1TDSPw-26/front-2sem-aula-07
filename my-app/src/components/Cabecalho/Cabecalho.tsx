@@ -5,9 +5,9 @@ export default function Cabecalho(){
             <h1>Meu boiler plate</h1>
             <nav>
                 <ul>
-                    <li><a href="#">Item-1</a></li>
-                    <li><a href="#">Item-2</a></li>
-                    <li><a href="#">Item-3</a></li>
+                    <li><a href="/editar-produtos">Editar Produtos</a></li>
+                    <li><a href="/produtos">Produtos</a></li>
+                    <li><a href="/">Home</a></li>
                 </ul>
             </nav>
         </header>
