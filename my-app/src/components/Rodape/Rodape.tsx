@@ -1,7 +1,10 @@
 export default function Rodape(){
 
-    return(
-
-        
-    );
+    return (
+        <footer>
+            <br />
+            <hr />
+            <p>&copy; Todos os direitos reservados</p>
+        </footer>
+    )
 }
