@@ -5,9 +5,9 @@ export default function Header() {
             <h1>Meu Boiler Plate</h1>
             <nav>
                 <ul>
-                    <li><a href="#">Item 01</a></li>
-                    <li><a href="#">Item 02</a></li>
-                    <li><a href="#">Item 03</a></li>
+                    <li><link to="/editar-produtos">Editar Produtos</link></li>
+                    <li><link to="/produtos">Produtos</link></li>
+                    <li><link to="/">Home</link></li>
                 </ul>
             </nav>
         </header>
