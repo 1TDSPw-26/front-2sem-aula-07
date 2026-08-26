@@ -1,11 +1,27 @@
 import Cabecalho from "./components/Cabecalho/Cabecalho";
+import Card from "./components/Card/Card";
+import Conteudo from "./components/Conteudo/Conteudo";
+import Rodape from "./components/Rodape/Rodape";
 
 export default function App() {
 
-  return(
+  return (
     <div>
-      <h1>TESTE</h1>
-      <Cabecalho/>
+      <Cabecalho />
+
+
+      {/* Crie aqui um componente que represente o conteúdo */}
+
+      <Conteudo />
+      <Card />
+
+      {/* Crie aqui um componente que represente o rodapé */}
+      <Rodape />
+
     </div>
+
+
+
+
   );
 }
