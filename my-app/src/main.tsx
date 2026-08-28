@@ -1,15 +1,17 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.tsx'
+import "./globals.css"
 
 //Importar os objetos de rotas:
-import { createBrowserRouter } from 'react-router'
+import { createBrowserRouter, RouterProvider } from 'react-router'
 
 //Importação dos componentes de rotas:
 import EditarProdutos from './routes/EditarProdutos/index.tsx'
 import ErrorPage from './routes/ErrorPage/index.tsx'
 import Home from './routes/Home/index.tsx'
 import Produtos from './routes/Produtos/index.tsx'
+import Conteudo from './routes/Conteudo/index.tsx'
 
 //Montar um objeto que retorna uma props com as rotas:
 const router = createBrowserRouter([
@@ -17,12 +19,13 @@ const router = createBrowserRouter([
     {path: '/', element: <Home />},
     {path: '/produtos', element: <Produtos />},
     {path: '/editar-produtos', element: <EditarProdutos />},
-    {path: '*', element: <ErrorPage />}
+    {path: '*', element: <ErrorPage />},
+    {path: '/churros', element:<Conteudo />}
   ]}
 ]);
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </StrictMode>,
 )
