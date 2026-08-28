@@ -4,11 +4,11 @@ import Rodape from "./componentes/Rodape/Rodape";
 
 export default function App(){
 
-  return(
-    <div>
-      <Cabecalho/>
-      <Outlet/>
-      <Rodape/>
+  return (
+    <div className="flex flex-col justify-between w-screen h-screen">
+      <Cabecalho />
+        <Outlet />
+      <Rodape />
     </div>
   );
 }
