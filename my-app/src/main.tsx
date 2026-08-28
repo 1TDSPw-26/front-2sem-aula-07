@@ -1,25 +1,32 @@
-import { Children, StrictMode } from 'react'
+import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client'
-
 import App from './App.tsx'
-import Home from './Routes/Home/Index.tsx'
-import Produtos from './Routes/Produtos/Index.tsx'
-import ErrorPage from './Routes/ErrorPage/Index.tsx'
-import EditarProdutos from './Routes/EditarProdutos/Index.tsx'
-
+import "./globals.css";
+ 
+//Importar os objetos de rotas:
 import { createBrowserRouter, RouterProvider } from 'react-router';
+ 
+//Importação dos componentes de ROTAS
+import EditarProdutos from './routes/EditarProdutos/index.tsx';
+import ErrorPage from './routes/ErrorPage/index.tsx';
+import Home from './routes/Home/index.tsx';
+import Produtos from './routes/Produtos/index.tsx';
+import Conteudo from './routes/Conteudo/index.tsx';
 
+ 
+//Montar um objeto que retorna uma props com as rotas:
 const router = createBrowserRouter([
-  {path: '/', element: <App />, errorElement: <ErrorPage />, Children: [
-    {path: '/', element: <Home />}
-    { path: '/Produtos', element: <Produtos /> }
-    { path: '/editar-produtos', element: <EditarProdutos /> }
-    { path: '*', element: <ErrorPage /> }
-  ]}  
-])
-
+  {path: '/', element: <App />, errorElement: <ErrorPage />,children:[
+    {path: '/', element: <Home />},
+    {path: '/produtos', element: <Produtos />},
+    {path: '/editar-produtos/:id', element: <EditarProdutos />},
+    {path: '/conteudo', element: <Conteudo />},
+    
+  ]}
+]);
+ 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </StrictMode>,
 )
