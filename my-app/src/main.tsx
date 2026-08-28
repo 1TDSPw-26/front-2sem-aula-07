@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.tsx'
-
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <App />
-=======
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client'
 import App from './App.tsx'
@@ -35,6 +25,5 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <RouterProvider router={router} />
->>>>>>> origin/feature/boiler-plate-pf0670
   </StrictMode>,
 )
