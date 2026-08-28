@@ -1,4 +1,4 @@
-import churrosLindos from "../../img/churros.jpg";
+import churrosLindos from "../../img/churros.png";
 
 
 export default function Conteudo() {
